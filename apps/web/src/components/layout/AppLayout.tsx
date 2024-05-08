@@ -16,6 +16,7 @@ import { FeatureFlagsKeysEnum } from '@novu/shared';
 import { HeaderNav as HeaderNavNew } from './components/v2/HeaderNav';
 import { MainNav } from '../nav/MainNav';
 import { FreeTrialBanner } from './components/FreeTrialBanner';
+import { ChatButton } from '../inkeep/ChatButton';
 
 const AppShell = styled.div`
   display: flex;
@@ -72,6 +73,7 @@ export function AppLayout() {
                       <HeaderNav isIntercomOpened={isIntercomOpened} />
                     )}
                     <Outlet />
+                    <ChatButton />
                   </ContentShell>
                 </AppShell>
               </SpotLight>
